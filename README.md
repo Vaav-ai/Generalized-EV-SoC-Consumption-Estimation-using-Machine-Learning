@@ -38,7 +38,7 @@ To run this project, you need the following libraries and tools:
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/SoC-Consumption-Estimation.git
+    git clone https://github.com/Vaav-ai/Generalized-EV-SoC-Consumption-Estimation-using-Machine-Learning.git
     cd SoC-Consumption-Estimation
     ```
 
@@ -99,17 +99,8 @@ The results of the trained models, including plots for actual vs. predicted SoC 
 
 ## Contributing
 
-Contributions are welcome! Please read the [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Contributions are welcome! 
 
 ## Acknowledgments
 
-- Special thanks to the research team for their invaluable contributions.
 - The project is part of a study submitted to the Journal of Energy Storage.
-
----
-
-Feel free to customize the `git clone` URL and paths according to your actual repository and file structure. Also, ensure you create the `CONTRIBUTING.md` and `LICENSE` files as referenced in the README.
