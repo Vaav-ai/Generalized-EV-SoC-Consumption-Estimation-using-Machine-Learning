@@ -1,0 +1,9 @@
+{
+    "data_path": "D:/Research/Completed/EVresearch/WORK/processed_dataset.csv",
+    "model": "XGBoost",
+    "n_trials": 100,
+    "n_input_params": 5,
+    "n_features": 5,
+    "feature_selection_method": "permutation_importance",
+    "selected_features_count": 4
+}
