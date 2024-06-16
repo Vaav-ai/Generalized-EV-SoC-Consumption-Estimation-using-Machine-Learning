@@ -4,6 +4,7 @@ import random
 import json
 import matplotlib.pyplot as plt
 import optuna
+import pickle
 from sklearn.preprocessing import StandardScaler, normalize
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
@@ -164,16 +165,21 @@ def main(config_path):
         raise ValueError(f"Unknown model: {config['model']}")
 
     final_model.fit(X_selected, y)
+
+    # Save the trained model to a file using pickle
+    with open('trained_model.pkl', 'wb') as f:
+        pickle.dump(final_model, f)
+
     y_pred = final_model.predict(X_selected)
 
     # Plot actual vs predicted
     plt.figure(figsize=(10, 6))
-    plt.scatter(y, y_pred, label='Actual vs Predicted', color='blue', s=10)  # Actual vs Predicted as scatter plot
-    plt.plot([y.min(), y.max()], [y.min(), y.max()], 'k--', lw=3)  # 45-degree line
-    plt.xlabel('Actual SoC Consumed')
-    plt.ylabel('Predicted SoC Consumed')
-    plt.title('Actual vs Predicted SoC Consumed')
+    plt.scatter(range(len(y)), y, label='Actual SoC Consumed', color='blue', s=10)  # Actual values as scatter plot
+    plt.plot(y_pred, label='Predicted SoC Consumed', color='red', alpha=0.7)  # Predicted values as line plot
     plt.legend()
+    plt.xlabel('Samples')
+    plt.ylabel('SoC Consumed')
+    plt.title('Actual vs Predicted SoC Consumed')
     plt.show()
 
     # Plot residuals
@@ -188,5 +194,5 @@ def main(config_path):
     plt.show()
 
 if __name__ == "__main__":
-    config_path = "D:/Research/Completed/EVresearch/config.json"
+    config_path = "D:/Research/Completed/EVresearch/config.json"  # Path to your config file
     main(config_path)
