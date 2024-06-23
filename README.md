@@ -56,6 +56,7 @@ The configuration for the model, including the type of model to use, number of t
 ```json
 {
     "data_path": "path/to/your/data.csv",
+    "model_path": "path/to/store/model/",
     "model": "XGBoost",
     "n_trials": 100,
     "n_input_params": 5,
@@ -70,7 +71,7 @@ The configuration for the model, including the type of model to use, number of t
 1. Place your dataset at the specified path in the `config.json` file.
 2. Run the main script:
     ```sh
-    python main.py path/to/config.json
+    python main.py
     ```
 3. The script will preprocess the data, perform feature selection, optimize the model hyperparameters using Optuna, train the best model, and save the trained model in a pickled format (`trained_model.pkl`).
 4. Ensure that the name of the target column in your CSV file is "SoC Consumed".
