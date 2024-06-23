@@ -73,6 +73,7 @@ The configuration for the model, including the type of model to use, number of t
     python main.py path/to/config.json
     ```
 3. The script will preprocess the data, perform feature selection, optimize the model hyperparameters using Optuna, train the best model, and save the trained model in a pickled format (`trained_model.pkl`).
+4. Ensure that the name of the target column in your CSV file is "SoC Consumed".
 
 ## Models and Features
 
