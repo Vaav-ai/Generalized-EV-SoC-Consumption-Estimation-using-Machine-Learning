@@ -1,0 +1,10 @@
+{
+    "data_path": "path/to/dataset.csv",
+    "model_path":"folder/to/store/model/",
+    "model": "all",
+    "n_trials": 1000,
+    "n_input_params": 5,
+    "n_features": 5,
+    "feature_selection_method": "permutation_importance",
+    "selected_features_count": 2
+}
