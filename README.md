@@ -99,10 +99,23 @@ This project supports several machine learning models and feature selection meth
 
 The results of the trained models, including plots for actual vs. predicted SoC consumption and residuals, are generated and displayed. The best hyperparameters for the selected model are also outputted.
 
-## Contributing
+## Credits
 
-Contributions are welcome! 
+Code contribution by:
+1. [Arav Jain](https://github.com/AravJain007) (Primary contributor)
+2. [Vatsal Jha](https://github.com/Vatsal-Jha256)
 
 ## Acknowledgments
 
-- The project is part of a study submitted to the Journal of Energy Storage.
+- The project is part of a study submitted to the Journal of Energy Storage. If you find this code useful please cite us.
+@article{JAIN2024112884,
+title = {Machine learning framework using on-road realtime data for battery SoC level prediction in electric two-wheelers},
+journal = {Journal of Energy Storage},
+volume = {97},
+pages = {112884},
+year = {2024},
+issn = {2352-152X},
+doi = {https://doi.org/10.1016/j.est.2024.112884},
+url = {https://www.sciencedirect.com/science/article/pii/S2352152X24024708},
+author = {Arav Jain and Vatsal Jha and Faisal Alsaif and B. Ashok and Indragandhi Vairavasundaram and C. Kavitha},
+}
