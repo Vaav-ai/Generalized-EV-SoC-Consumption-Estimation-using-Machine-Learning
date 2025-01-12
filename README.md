@@ -102,7 +102,7 @@ The results of the trained models, including plots for actual vs. predicted SoC 
 ## Credits
 
 Code contribution by:
-1. [Arav Jain](https://github.com/AravJain007) (Primary contributor)
+1. [Arav Jain](https://github.com/AravJain007)
 2. [Vatsal Jha](https://github.com/Vatsal-Jha256)
 
 ## Acknowledgments
